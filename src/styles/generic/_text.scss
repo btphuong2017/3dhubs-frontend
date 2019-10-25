@@ -1,0 +1,37 @@
+$text-colors: (
+    'white' : $white,
+    'black' : $black,
+    'black-opacity' : $txt-blk-opacity,
+    'white-opacity' : $txt-wht-opacity,
+    'primary' : $bg-primary,
+    'primary-bold' : $bg-primary-bolder,
+);
+$text-aligns : (
+    'center' : center,
+    'left' : left,
+    'right' : right
+);
+$text-weights: (
+    'normal' : normal,
+    'bold' : bold,
+    '600' : 600
+);
+
+@mixin create_text_classes {
+    @each $key, $value in $text-colors {
+        .text--#{$key} {
+            color: $value !important;
+        }
+    }
+    @each $key, $value in $text-aligns {
+        .text--#{$key} {
+            text-align: $value;
+        }
+    }
+    @each $key, $value in $text-weights {
+        .text--#{$key} {
+            font-weight: $value;
+        }
+    }
+}
+@include create_text_classes();

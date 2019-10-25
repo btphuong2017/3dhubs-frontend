@@ -1,0 +1,71 @@
+$capability-padding: 20px;
+.capability {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-flow: column;
+    background-color: rgba(255,255,255,0.08);
+    align-items: center;
+    padding-top: $capability-padding;
+    padding-bottom: $capability-padding;
+    overflow: hidden;
+}
+
+.capability__title {
+    width: 100%;
+    font-size: 19px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-left: $capability-padding;
+    padding-right: $capability-padding;
+}
+.capability__description {
+    height: 48px;
+    padding-left: $capability-padding;
+    padding-right: $capability-padding;
+}
+.capebility__imageContainer {
+    position: relative;
+    width: 100%;
+    height: 240px;
+}
+.capability__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    z-index: 0;
+}
+.capability__table {
+    padding-left: $capability-padding;
+    padding-right: $capability-padding;
+    width: 100%;
+    position: relative;
+    margin-bottom: 15px;
+    tr th, tr td {
+        width: 50%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: left;
+    }
+    tr th {
+        color: $txt-wht-opacity;
+        padding-right: 15px;
+    }
+    tr td {
+        color: $white;
+    }
+
+}
+.capability__actions {
+    position: relative;
+    width: 100%;
+    padding-left: $capability-padding;
+    padding-right: $capability-padding;
+}
+.capability__actions .button {
+    width: 100%;
+    margin-bottom: 20px;
+}

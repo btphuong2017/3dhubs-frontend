@@ -1,0 +1,22 @@
+.header {
+    padding: 0 15px;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    min-height: 64px;
+    background: #000;
+}
+
+.header__navToggle {
+    border-color: $txt-wht-opacity;
+    color: $txt-wht-opacity;
+    line-height: 1;
+    padding: 3px 8px;
+    display: none;
+    span {
+        font-size: 18px;
+        color: $txt-wht-opacity;
+    }
+}

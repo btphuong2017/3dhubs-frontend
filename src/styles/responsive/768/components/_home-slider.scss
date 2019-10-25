@@ -1,0 +1,24 @@
+.homeSlider {
+    padding-bottom: 30px;
+}
+.homeSlider__slide {
+    flex-flow: row wrap;
+    h4 {
+        display: none;
+    }
+}
+.homeSlider__navigation {
+    display: none;
+}
+.homeSlider__leftColumn {
+    padding-right: 15px;
+}
+.homeSlider__rightColumn {
+    padding-left: 15px;
+}
+.homeSlider__pagination {
+    display: flex;
+}
+.homeSlider_mainTitle {
+    display: block;
+}

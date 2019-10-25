@@ -1,0 +1,41 @@
+.product__actions {
+    margin-bottom: 35px;
+}
+.product__leftColumn {
+    padding-right: 50px;
+}
+.product__rightColumn {
+    padding-left: 50px;
+}
+.product__navigation {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 3;
+    &--next {
+        right: 0;
+    }
+    &--prev {
+        left: 0;
+    }
+    span {
+        color: $white;
+        font-size: 30px;
+    }
+}
+.product__pagination {
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    flex-flow: row;
+    justify-content: center;
+    transform: translate(-50%, 0);
+    span {
+        margin: 0 10px;
+        border-radius: 50%;
+        background: $txt-wht-opacity;
+        width: 10px;
+        height: 10px;
+    }
+}

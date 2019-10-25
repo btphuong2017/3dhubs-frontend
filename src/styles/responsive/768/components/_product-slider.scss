@@ -1,0 +1,26 @@
+.product__list {
+    display: none;
+}
+.product__actions .button {
+    background: $black;
+    color: $bg-primary;
+    text-decoration-color: $bg-primary;
+    text-decoration-style: solid;
+    text-decoration-line: underline;
+    font-weight: 600;
+}
+.product__slideItem {
+    display: flex;
+    flex-flow: row wrap;
+}
+.product__leftColumn, .product__rightColumn {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+.product__navigation {
+    display: none;
+}
+.product__pagination {
+    display: flex;
+}

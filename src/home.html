@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- LAYOUT -->
+    <!-- ============================================ -->
+    <!-- 
+        + Page Loader
+        + Page Topbar Banner (Optional)
+        + Page Header (Nav)
+        + Page Body (Content)
+        + Page Footer (Footer)
+    -->
+    <!-- =========================================== -->
+    <!-- LAYOUT -->
+
+    <div class="section section--extraWidth section--alignCenter section__messageBanner" id="messageBanner">
+        <div class="messageBanner__message">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+        </div>
+        <div class="messageBanner__close">
+            <button type="button" class="button messageBanner__closeButton" id="messageBanner__closeButton">
+                <span>&times;</span>
+            </button>
+        </div>
+    </div>
+    <header class="header" id="header">
+        <div class="header__mainBrand">
+            <a href="/" class="mainBrand" title="Go to homepage">
+                <img class="mainBrand__image" src=<%=require("./images/logo.png") %> alt="Logo">
+            </a>
+        </div>
+        <button type="button" class="button button--border button-transparent header__navToggle collapse__toggle"
+            data-target="#mainNav">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </button>
+        <div class="header__navbar collapse" id="mainNav">
+            <ul class="navbar__mainMenu" id="mainMenu">
+                <li class="mainMenu__item">
+                    <a href="#" class="mainMenu__link" title="Lorem Ipsum">
+                        Lorem Ipsum
+                    </a>
+                </li>
+                <li class="mainMenu__item mainMenu__item--dropdown">
+                    <a href="#" class="mainMenu__link dropDown__toggle" title="Dropdown">
+                        Dropdown
+                    </a>
+                    <div class="mainMenu__dropDown dropDown">
+                        <div class="dropDown__inner">
+                            <ul class="mainMenu__subMenu">
+                                <li class="mainMenu__item">
+                                    <a href="#"
+                                        class="mainMenu__link--black mainMenu__link--noPaddingLeft subMenu__link"
+                                        title="Lorem">
+                                        Lorem Ipsum 0
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="mainMenu__item mainMenu__item--dropdown">
+                    <a href="#" class="mainMenu__link dropDown__toggle" title="Dropdown">
+                        Dropdown
+                        <span class="fa fa-angle-down"></span>
+                    </a>
+                    <div class="mainMenu__dropDown dropDown">
+                        <div class="dropDown__inner">
+                            <ul class="mainMenu__subMenu">
+                                <li class="mainMenu__item">
+                                    <a href="#"
+                                        class="mainMenu__link--black mainMenu__link--noPaddingLeft subMenu__link"
+                                        title="Lorem">
+                                        Lorem Ipsum 1
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="mainMenu__item mainMenu__item--dropdown">
+                    <a href="#" class="mainMenu__link dropDown__toggle" title="Dropdown">
+                        Dropdown
+                    </a>
+                    <div class="mainMenu__dropDown dropDown">
+                        <div class="dropDown__inner">
+                            <ul class="mainMenu__subMenu">
+                                <li class="mainMenu__item">
+                                    <a href="#"
+                                        class="mainMenu__link--black mainMenu__link--noPaddingLeft subMenu__link"
+                                        title="Lorem">
+                                        Lorem Ipsum 2
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="navbar__getQuote">
+                <a href="#" class="button button--border button--transparent navbar__buttonGetQuote">
+                    Get instant quote
+                </a>
+            </div>
+            <div class="navbar__account">
+                <button
+                    class="button button--border button--circle button--icon navbar__buttonAccount dropDown__toggle">
+                    <span class="fa fa-user"></span>
+                </button>
+                <div class="dropDown navbar__accountDropdown">
+                    <div class="dropDown__inner">
+                        <div class="dropDown__innerBody">
+                            <ul class="mainMenu__subMenu">
+                                <li class="mainMenu__item mainMenu__item--black">
+                                    <a href="#"
+                                        class="mainMenu__link mainMenu__link--black mainMenu__link--noPaddingLeft subMenu__link">
+                                        Lorem Ipsum
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="dropDown__innerFoot">
+                            <ul class="mainMenu__subMenu">
+                                <li class="mainMenu__item mainMenu__item--black">
+                                    <a href="#"
+                                        class="mainMenu__link mainMenu__link--black mainMenu__link--noPaddingLeft subMenu__link">
+                                        Lorem Ipsum
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content" id="content">
+        <!-- SECTION HERO TWO COLUMN -->
+        <section class="section section--black section__hero homeBanner">
+            <div class="section__inner ">
+                <div class="sectionContent sectionContent--black">
+                    <div class="sectionContent__column sectionContent__column--flex homeBanner__leftColumn">
+                        <div class="sectionContent__innerColumn--middle">
+                            <h1 class="sectionContent__title sectionContent__title--large">Lorem Ipsum is simply</h1>
+                            <p class="sectionContent__paragraph sectionContent__paragraph--large">Lorem Ipsum is simply
+                                dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard dummy text ever since the 1500s</p>
+                            <div class="sectionContent__actions">
+                                <a href="#" class="button button--primary button--radius button--large">Get instant
+                                    quote</a>
+                                <a href="#" class="button button--secondary button--large button--radius">See how it
+                                    work</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionContent__column homeBanner__rightColumn">
+                        <img class="sectionContent__image homeBanner__rightImage" src=<%=require('./images/hero.jpg')%>
+                            alt="Home Hero" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SECTION THREE COLUMNS -->
+        <section class="section section--extraWidth section--black section__capabilities">
+            <div class="section__inner">
+                <div class="sectionContent sectionContent--black">
+                    <div class="sectionContent__column text--center ">
+                        <h2 class="sectionContent__title">Our manufacturing capabilities</h2>
+                        <div class="sectionContent__actions">
+                            <a href="#" class="button button--secondary button--radius button--bold">
+                                Download.pdf
+                            </a>
+                            <a href="#" class="button button--secondary button--radius button--bold">
+                                Download.pdf
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sectionContent sectionContent--black">
+                    <div class="sectionContent__column--4 sectionContent__column--tablet sectionContent__column--flex">
+                        <div class="capability">
+                            <h3 class="capability__title text--white d--block ">Lorem Ipsum</h3>
+                            <button type="button"
+                                class="button button--inline button--transparent capability__contentToggle collapse__toggle collapse__toggle--tablet">
+                                <span class="fa fa-angle-down text--white"></span>
+                            </button>
+                            <div class="capability__content collapse collapse--tablet">
+                                <p class="capability__description text--white">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry</p>
+                                <div class="capebility__imageContainer">
+                                    <img class="capability__image" src=<%=require('./images/cnc-part.jpg') %> alt="" />
+                                </div>
+                                <table class="capability__table">
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                </table>
+                                <div class="capability__actions">
+                                    <a href="#" class="button button--primary button--radius button--bold d--block ">Get
+                                        instant quote</a>
+                                    <a href="#"
+                                        class="button button--primary-alt button--radius button--transparent button--bold d--block ">Get
+                                        instant quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionContent__column--4 sectionContent__column--tablet sectionContent__column--flex">
+                        <div class="capability">
+                            <h3 class="capability__title text--white d--block ">
+                                Lorem Ipsum
+                            </h3>
+                            <button type="button"
+                                class="button button--inline button--transparent capability__contentToggle collapse__toggle collapse__toggle--tablet">
+                                <span class="fa fa-angle-down text--white"></span>
+                            </button>
+                            <div class="capability__content collapse collapse--tablet">
+                                <p class="capability__description text--white">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry</p>
+                                <div class="capebility__imageContainer">
+                                    <img class="capability__image" src=<%=require('./images/cnc-part.jpg') %> alt="" />
+                                </div>
+                                <table class="capability__table">
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                </table>
+                                <div class="capability__actions">
+                                    <a href="#" class="button button--primary button--radius button--bold d--block ">Get
+                                        instant quote</a>
+                                    <a href="#"
+                                        class="button button--primary-alt button--radius button--transparent button--bold d--block ">Get
+                                        instant quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionContent__column--4 sectionContent__column--tablet sectionContent__column--flex">
+                        <div class="capability">
+                            <h3 class="capability__title text--white d--block ">Lorem Ipsum</h3>
+                            <button type="button"
+                                class="button button--inline button--transparent capability__contentToggle collapse__toggle collapse__toggle--tablet">
+                                <span class="fa fa-angle-down text--white"></span>
+                            </button>
+                            <div class="capability__content collapse collapse--tablet">
+                                <p class="capability__description text--white">Lorem Ipsum is simply dummy text of the
+                                    printing and typesetting industry</p>
+                                <div class="capebility__imageContainer">
+                                    <img class="capability__image" src=<%=require('./images/cnc-part.jpg') %> alt="" />
+                                </div>
+                                <table class="capability__table">
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Lorem Ipsum</th>
+                                        <td>Lorem Ipsum</td>
+                                    </tr>
+                                </table>
+                                <div class="capability__actions">
+                                    <a href="#" class="button button--primary button--radius button--bold d--block ">Get
+                                        instant quote</a>
+                                    <a href="#"
+                                        class="button button--primary-alt button--radius button--transparent button--bold d--block ">Get
+                                        instant quote</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION THREE COLUMNS -->
+        <section class="section section--extraWidth section--black section__quality">
+            <div class="section__inner ">
+                <div class="sectionContent sectionContent--black quality">
+                    <div class="sectionContent__column--6 sectionContent__column--mobile quality__leftColumn">
+                        <h2 class="sectionContent__title text--white">
+                            Get quality parts fast and hassle-free
+                        </h2>
+                        <div class="quality__card">
+                            <div class="quality__cardHeader" data-show="true" data-imageIndex="0">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z">
+                                    </path>
+                                </svg>
+                                <h3 class="sectionContent__title sectionContent__title--small text--white">Build your
+                                    instant quote</h3>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                            <div class="quality__cardBody show">
+                                <div class="quality__innerBody">
+                                    <p class="quality__description text--white-opacity">Upload your CAD files.
+                                        Specify your material, surface finish, threaded holes, tolerances and lead time.
+                                        Confirm manufacturability using our instant DFM feedback</p>
+                                    <div class="quality__actions">
+                                        <a href="#" class="button button--primary button--radius">Get instant quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quality__card">
+                            <div class="quality__cardHeader" data-show="false" data-imageIndex="1">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z">
+                                    </path>
+                                </svg>
+                                <h3 class="sectionContent__title sectionContent__title--small text--white">Build your
+                                    instant quote</h3>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                            <div class="quality__cardBody">
+                                <div class="quality__innerBody">
+                                    <p class="quality__description text--white-opacity">Upload your CAD files.
+                                        Specify your material, surface finish, threaded holes, tolerances and lead time.
+                                        Confirm manufacturability using our instant DFM feedback</p>
+                                    <div class="quality__actions">
+                                        <a href="#" class="button button--primary button--radius">Get instant quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="quality__card">
+                            <div class="quality__cardHeader" data-show="false" data-imageIndex="2">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z">
+                                    </path>
+                                </svg>
+                                <h3 class="sectionContent__title sectionContent__title--small text--white">Build your
+                                    instant quote</h3>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                            <div class="quality__cardBody">
+                                <div class="quality__innerBody">
+                                    <p class="quality__description text--white-opacity">Upload your CAD files.
+                                        Specify your material, surface finish, threaded holes, tolerances and lead time.
+                                        Confirm manufacturability using our instant DFM feedback</p>
+                                    <div class="quality__actions">
+                                        <a href="#" class="button button--primary button--radius">Get instant quote</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionContent__column--6 sectionContent__column--mobile quality__rightColumn d--flex">
+                        <img id="quality-image-0" class="quality__image show"
+                            src=<%=require('./images/quality-small.png') %> alt="Quality">
+                        <img id="quality-image-1" class="quality__image" src=<%=require('./images/quality-small.png') %>
+                            alt="Quality">
+                        <img id="quality-image-2" class="quality__image" src=<%=require('./images/quality-small.png') %>
+                            alt="Quality">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--extraWidth section--black section__platformDescription">
+            <div class="section__inner">
+                <div class="sectionContent platformDescription">
+                    <div class="sectionContent__column sectionContent__column--12">
+                        <h2 class="sectionContent__title text--white">Skip the back-and-forth using our online factory</h2>
+                    </div>
+                    <div class="platformDescription__laptopPanel">
+                        <img class="platformDescription__laptopBackground" src=<%=require('./images/laptop.png')%>
+                            alt="" />
+                        <img id="platformDescription__screen--0" class="platformDescription__screen active"
+                            src=<%=require('./images/screen-cart.png') %> alt="" />
+                        <img id="platformDescription__screen--1" class="platformDescription__screen"
+                            src=<%=require('./images/screen-cart.png') %> alt="" />
+                        <img id="platformDescription__screen--2" class="platformDescription__screen"
+                            src=<%=require('./images/screen-cart.png') %> alt="" />
+                        <img id="platformDescription__screen--3" class="platformDescription__screen"
+                            src=<%=require('./images/screen-cart.png') %> alt="" />
+                    </div>
+                    <div class="platformDescription__contentPanel">
+                        <ul class="platformDescription__contentList">
+                            <li class="platformDescription__contentItem active" data-screenIndex="0">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non nobis fugit
+                                    voluptate rem, aspernatur assumenda nulla, earum pariatur ad necessitatibus sequi
+                                </p>
+                            </li>
+                            <li class="platformDescription__contentItem" data-screenIndex="1">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non nobis fugit
+                                    voluptate rem, aspernatur assumenda nulla, earum pariatur ad necessitatibus sequi
+                                </p>
+                            </li>
+                            <li class="platformDescription__contentItem" data-screenIndex="2">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non nobis fugit
+                                    voluptate rem, aspernatur assumenda nulla, earum pariatur ad necessitatibus sequi
+                                </p>
+                            </li>
+                            <li class="platformDescription__contentItem" data-screenIndex="3">
+                                <h3>Lorem Ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos non nobis fugit
+                                    voluptate rem, aspernatur assumenda nulla, earum pariatur ad necessitatibus sequi
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--extraWidth section--black section__products">
+            <div class="section__inner">
+                <div class="sectionContent sectionContent--black d--block">
+                    <div class="swiper-container product__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product__slideItem d--flex">
+                                    <div
+                                        class="sectionContent__column--6 sectionContent__column--mobile product__leftColumn">
+                                        <img src="../src/images/cnc-china.png"
+                                            class="sectionContent__image homeSlider__image" alt="" />
+                                    </div>
+                                    <div
+                                        class="sectionContent__column--6 sectionContent__column--mobile product__rightColumn">
+                                        <div class="product_slideContent">
+                                            <h4
+                                                class="sectionContent__title sectionContent__title--small text--white">
+                                                Lorem Ipsum
+                                            </h4>
+                                            <h3 class="sectionContent__title text--white text--bold">Lorem Ipsum</h3>
+                                            <div class="sectionContent__actions product__actions">
+                                                <button type="button" class="button button--primary button--radius button--bold">Read case study</button>
+                                            </div>
+                                            <ul class="product__list">
+                                                <li class="product__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="product__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="product__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="product__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination product__pagination"></div>
+                        <button type="button"
+                            class="button button--transparent button--circle product__navigation product__navigation--next">
+                            <span class="fa fa-arrow-circle-right"></span>
+                        </button>
+                        <button type="button"
+                            class="button button--transparent button--circle product__navigation product__navigation--prev">
+                            <span class="fa fa-arrow-circle-left"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--extraWidth section--black section__homeSlider">
+            <div class="section__inner">
+                <div class="sectionContent sectionContent--black d--block">
+                    <div class="sectionContent__column">
+                        <h2 class="sectionContent__title text--white-opacity homeSlider_mainTitle">
+                            Lorem Ipsum
+                        </h2>
+                    </div>
+                    <div class="swiper-container homeSlider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="homeSlider__slide d--flex">
+                                    <div
+                                        class="sectionContent__column--6 sectionContent__column--mobile homeSlider__leftColumn">
+                                        <img src="../src/images/cnc-china.png"
+                                            class="sectionContent__image homeSlider__image" alt="" />
+                                    </div>
+                                    <div
+                                        class="sectionContent__column--6 sectionContent__column--mobile homeSlider__rightColumn">
+                                        <div class="homeSlider__content">
+                                            <h4
+                                                class="sectionContent__title sectionContent__title--small text--white-opacity">
+                                                Lorem Ipsum
+                                            </h4>
+                                            <h3 class="sectionContent__title text--white">Lorem Ipsum</h3>
+                                            <ul class="homeSlider__list">
+                                                <li class="homeSlider__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="homeSlider__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="homeSlider__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="homeSlider__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                                <li class="homeSlider__listItem">
+                                                    <span class="d--block text--white text--600">Heading</span>
+                                                    <span class="d--block text--white-opacity">Content</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination homeSlider__pagination"></div>
+                        <button type="button"
+                            class="button button--transparent button--circle homeSlider__navigation homeSlider__navigation--next">
+                            <span class="fa fa-arrow-circle-right"></span>
+                        </button>
+                        <button type="button"
+                            class="button button--transparent button--circle homeSlider__navigation homeSlider__navigation--prev">
+                            <span class="fa fa-arrow-circle-left"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+         
+    </div>
+    <footer class="footer section section--extraWidth section--black section--borderTop">
+        <div class="section__inner">
+            <div class="sectionContent sectionContent--black sectionContent__noWrap footerContent__links">
+                <div class="sectionContent__column sectionContent__column--mobile-6 footerContent__linkGroup">
+                    <h3 class="sectionContent__title sectionContent__title--tiny text--white">About</h3>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                </div>
+                <div class="sectionContent__column sectionContent__column--mobile-6 footerContent__linkGroup">
+                    <h3 class="sectionContent__title sectionContent__title--tiny text--white">About</h3>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                </div>
+                <div class="sectionContent__column sectionContent__column--mobile-6 footerContent__linkGroup">
+                    <h3 class="sectionContent__title sectionContent__title--tiny text--white">About</h3>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                </div>
+                <div class="sectionContent__column sectionContent__column--mobile-6 footerContent__linkGroup">
+                    <h3 class="sectionContent__title sectionContent__title--tiny text--white">About</h3>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                </div>
+                <div class="sectionContent__column sectionContent__column--mobile-6 footerContent__linkGroup">
+                    <h3 class="sectionContent__title sectionContent__title--tiny text--white">About</h3>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <a href="#" class="text--white-opacity">Our Platform</a>
+                    <div class="footerContent__socialGroup">
+                        <a href="#">
+                            <span class="fa fa-facebook"></span>
+                        </a>
+                        <a href="#">
+                            <span class="fa fa-pinterest"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sectionContent footerContent__copyrightContainer">
+                <p class="footerContent__copyright">Copyright © 2019 3D HUBS B.V. All rights reserved.</p>
+                <div class="footerContent__languageSwitcher">
+                    <button type="button"
+                        class="button button--transparent footerContent__languageSwitcherButton text--white dropDown__toggle">
+                        <img src="../src/images/en.svg" alt="End" />
+                        <span>
+                            EN
+                            <i class="fa fa-angle-up"></i>
+                        </span>
+                    </button>
+                    <div class="dropDown dropDown--up footerContent__dropDown" data-direct="up">
+                        <div class="dropDown__inner">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        class="button button--transparent footerContent__languageSwitcherButton text--white dropDown__toggle">
+                                        <img src="../src/images/en.svg" alt="End" />
+                                        <span>
+                                            EN
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="button button--transparent footerContent__languageSwitcherButton text--white dropDown__toggle">
+                                        <img src="../src/images/en.svg" alt="End" />
+                                        <span>
+                                            EN
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

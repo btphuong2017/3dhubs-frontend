@@ -1,0 +1,6 @@
+@media screen and (max-width: $bp-tablet) {
+    @import './1024/index';
+}
+@media screen and (max-width: $bp-mobile) {
+    @import './768/index';
+}

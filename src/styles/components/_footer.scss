@@ -1,0 +1,94 @@
+.footerContent__links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $bg-grey-transparent;
+}
+
+.footerContent__linkGroup {
+
+    h3,
+    a {
+        display: block;
+        font-size: 13px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+
+    a:hover {
+        color: $white;
+    }
+}
+
+.footerContent__socialGroup {
+    a {
+        display: inline-block;
+        margin-right: 10px;
+
+        span {
+            font-size: 15px;
+            color: $txt-wht-opacity;
+        }
+    }
+}
+
+.footerContent__copyrightContainer {
+    padding: 50px 0;
+    border-top: 1px solid $bg-grey-transparent;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.footerContent__copyright {
+    font-size: 11px;
+    color: $txt-wht-opacity;
+}
+.footerContent__languageSwitcher {
+    position: relative;
+}
+
+.footerContent__languageSwitcherButton {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 600;
+    display: flex;
+    span,
+    img {
+        display: inline-block;
+    }
+
+    img {
+        height: 15px;
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    span {
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 600;
+        color: $white;
+    }
+    i {
+        color: $white;
+        font-size: 14px;
+    }
+    &.active {
+        i {
+            transform: rotate(180deg);
+        }
+    }
+}
+.footerContent__dropDown {
+    min-width: auto;
+    border-bottom: 1px solid $bg-grey-transparent;
+}
+.footerContent__dropDown .dropDown__inner {
+    border: none;
+    background: $black;
+    padding: 0;
+}
+.footerContent__dropDown .footerContent__languageSwitcherButton:hover {
+    span {
+        color: $txt-wht-opacity;
+    }
+}

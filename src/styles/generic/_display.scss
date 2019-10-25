@@ -1,0 +1,15 @@
+$displayTypes: (
+    'block' : block,
+    'inline' : inline,
+    'inlineBlock' : inline-block,
+    'flex' : flex
+);
+
+@mixin make_display_classes {
+    @each $name, $prop in $displayTypes {
+        .d--#{$name} {
+            display: #{$prop} !important;
+        }
+    }
+}
+@include make_display_classes();

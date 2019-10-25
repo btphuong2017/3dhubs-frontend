@@ -1,0 +1,16 @@
+.navbar__account {
+    padding-left: 10px;
+    position: relative;
+}
+.navbar__buttonAccount {
+    border-width: 2px;
+    border-color: $white;
+    padding: 5px 9px;
+    span {
+        color: $white;
+        width: 16px;
+    }
+}
+.navbar__accountDropdown {
+    right: 0;
+}

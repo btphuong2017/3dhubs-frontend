@@ -1,0 +1,25 @@
+.collapse {
+    display: none;
+    &--tablet {
+        display: block;
+    }
+}
+.collapse__toggle {
+    display: inline-block;
+    &--tablet {
+        display: none;
+    }
+}
+.collapse.collapsing {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height $collapse-animation-time ease;
+    transition: height $collapse-animation-time ease;
+}
+.collapse.show {
+    display: block;
+    height: auto;
+    -webkit-transition: height $collapse-animation-time ease;
+    transition: height $collapse-animation-time ease;
+}

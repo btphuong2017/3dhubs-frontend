@@ -1,0 +1,24 @@
+
+.messageBanner__message {
+    flex: 0 0 auto;
+    max-width: 100%;
+    color: $txt-wht-opacity;
+    text-align: center;
+}
+.messageBanner__close {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%)
+}
+
+.messageBanner__closeButton {
+    background: none;
+    padding: 2px 7px;
+    transition: top .4s ease;
+    span {
+        font-size: 18px;
+        color: $white;
+    }
+}

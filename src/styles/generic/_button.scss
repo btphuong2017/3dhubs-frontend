@@ -1,0 +1,62 @@
+.button {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: $black;
+    padding: 5px 15px;
+    line-height: 24px;
+    text-align: center;
+    transition: all .4s ease;
+    &--border {
+        border: 1px solid $black;
+    }
+    &--bold {
+        font-weight: 600;
+    }
+    &--radius {
+        border-radius: 3px;
+    }
+    &--transparent {
+        background: transparent !important;
+    }
+    &--circle {
+        border-radius: 50%;
+    }
+    &--icon {
+        span {
+            font-size: 18px;
+        }
+    }
+    &--primary {
+        color: $white;
+        background: $bg-primary;
+        &:hover {
+            background: $bg-primary-bolder;
+        }
+    }
+    &--primary-alt {
+        color: $bg-primary;
+        background: $white;
+        &:hover {
+            color: $bg-primary-bolder;
+        }
+    }
+    &--secondary {
+        color: $white;
+        background: rgba(255, 255, 255, 0.24);
+        &:hover {
+            background: $bg-grey-transparent;
+        }
+    }
+    &--large {
+        font-weight: 600;
+        font-size: 17px;
+        padding: 15px 30px;
+    }
+    &--inline {
+        display: inline;
+        padding: 0;
+    }
+}

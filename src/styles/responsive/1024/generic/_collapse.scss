@@ -1,0 +1,10 @@
+.collapse {
+    &--tablet {
+        display: none;
+    }
+}
+.collapse__toggle {
+    &--tablet {
+        display: inline-block;
+    }
+}

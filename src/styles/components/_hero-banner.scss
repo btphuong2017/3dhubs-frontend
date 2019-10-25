@@ -1,0 +1,48 @@
+.heroBanner {
+    position: relative;
+    &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+    &__panel {
+        width: 600px;
+        height: 600px;
+        margin-top: 30px;
+        background: $white;
+        padding: 36px ;
+        margin-bottom: 30px;
+        display: flex;
+        flex-flow: column;
+    }
+    &__main {
+        margin: auto 0;
+    }
+    &__description {
+        color: $txt-blk-opacity;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 25px;
+        padding: 30px 0;
+    }
+    &__getQuote {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    &__extra, &__extra p {
+        color: $txt-blk-opacity;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+.heroBanner--noPanel {
+    .heroBanner__image {
+        position: relative;
+        height: 660px;
+    }
+    .heroBanner__panel {
+        display: none;
+    }
+}

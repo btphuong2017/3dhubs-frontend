@@ -1,0 +1,39 @@
+.navbar__mainMenu {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.mainMenu__item {
+    
+    &--dropdown {
+        position: relative;
+    }    
+}
+.mainMenu__link {
+    display: block;
+    color: $txt-wht-opacity;
+    line-height: 24px;
+    padding: 10px 10px;
+    &:hover {
+        color: $white;
+    }
+    &--black {
+        @extend .mainMenu__link;
+        color: $txt-blk-opacity;
+        &:hover {
+            color: $black;
+        }
+    }
+    &--noPaddingLeft {
+        padding-left: 0;
+    }
+}
+.mainMenu__subMenu {
+    list-style: none;
+}
+
+.subMenu__link {
+    display: block;
+}

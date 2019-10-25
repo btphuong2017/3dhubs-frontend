@@ -1,0 +1,19 @@
+.header__navbar.collapse {
+    margin-left: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.navbar__getQuote {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar__buttonGetQuote {
+    color: $txt-wht-opacity;
+    border-color: $txt-wht-opacity;
+    transition: all .2s ease;
+    &:hover {
+        color: $white;
+        border-color: $white;
+    }
+}

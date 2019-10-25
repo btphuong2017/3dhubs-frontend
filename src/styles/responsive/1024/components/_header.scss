@@ -1,0 +1,88 @@
+.header {
+    flex-flow: row wrap;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.header__navbar {
+    display: none;
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 0;
+    overflow: hidden;
+}
+.header__navToggle {
+    display: inline-block;
+    margin-left: auto;
+}
+.navbar__account, .navbar__mainMenu, .navbar__getQuote {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.navbar__mainMenu {
+    display: block;
+    .mainMenu__item {
+        display: block;
+    }
+    
+    .mainMenu__link {
+        padding: 10px 0;
+    }
+}
+.navbar__mainMenu .mainMenu__item, .navbar__getQuote, .navbar__account > .mainMenu__item:not(:last-child) {
+    border-bottom: 1px solid $txt-wht-opacity;
+}
+.navbar__getQuote {
+    padding: 0;
+}
+.navbar__buttonGetQuote {
+    border: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.header .dropDown {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    .dropDown__inner {
+        padding: 0;
+        border: none;
+        background: $black;
+        animation: none;
+        .subMenu__link {
+            color: $txt-wht-opacity;
+            padding: 10px 0;
+        }
+    }
+}
+.header .navbar__mainMenu .dropDown {
+    height: 0;
+    transition: height 300ms ease;
+    &.show {
+        height: auto;
+    }
+    &.showing {
+        display: block;
+    }
+}
+.navbar__account {
+    padding: 0;
+}
+.navbar__buttonAccount {
+    display: none;
+}
+.navbar__accountDropdown {
+    display: block;
+    position: relative;
+}
+.navbar__mainMenu .mainMenu__link.dropDown__toggle {
+    position: relative;
+    span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

@@ -1,0 +1,77 @@
+
+.quality__leftColumn {
+    padding-right: 50px;
+    min-height: 500px;
+}
+
+.quality__rightColumn {
+    padding-left: 50px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    img {
+        display: none;
+        max-width: 100%;
+        object-fit: scale-down;
+        object-position: center;
+        &.show {
+            display: block;
+        }
+    }
+}
+
+.quality__cardHeader {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+    }
+    svg {
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 24px;
+        path {
+            fill: $white;
+        }
+    }
+    span {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.quality__cardBody {
+    display: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    &.showing {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        position: relative;
+        transition: height .3s ease;
+    }
+    &.show {
+        display: block;
+    }
+}
+
+.quality__description {
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.quality__actions {
+    .button {
+        margin-bottom: 15px;
+    }
+}
